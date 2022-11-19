@@ -1,0 +1,59 @@
+MIME - Multipurpose Internet Mail Extension
+
+generally represented as 'type/subtype' or 'type/subtype;parameter=value'
+
+-   type    subtype     optional
+-   text                
+            plain       text/plain;charset=UTF-8
+            html
+            calender
+
+-   video
+
+MEME type
+    descrete    -   represents single file or medium (eg. img file, text file, nusic file, single video)
+        -   application -> binary data runs of specific application
+            -   application/octet-stream
+            -   application/pdf
+            -   application/zip
+        -   audio   ->  audio data 
+            -   audio/mpeg
+        -   example ->  can be used as a placeholder (generally not used)
+            - audio/example
+        -   font    ->  font or typeface data
+            -   font/ttf
+            -   font/otf
+        -   image   ->  image, graphs, bitmap, vector images gifs
+            -   image/jpeg
+            -   image/png
+            -   imgae/svg+xml
+        -   model   ->  3d model or 3D scene data
+            -   model/3mf
+            -   model/vrml
+            -   model/obj
+            -   model/mtl
+        -   text    ->  human readable data content
+            -   text/plain
+            -   text/html
+            -   text/csv
+        -   video   ->  video data or files
+            -   video/mp4   
+
+    multipart   -    comprised of multiple components parts. (attached multiple files in mail)  composite documents
+        -   message ->  to allow sending large messages in chunks
+            -   message/rfc822  ->  (for forward and repy to message)
+            -   message/partial ->  (to allow break large message into smaller ones)
+            
+        -   multipart   ->  consists of multiple components having different MIME type
+            -   multipart/form-data     ->  used in POST method of HTML forms
+            -   multipart/byterange     ->  used with {status code 206 : partial content} to send part of document
+
+         
+
+
+
+
+https://www.iana.org/assignments/media-types/media-types.xhtm
+
+
+
